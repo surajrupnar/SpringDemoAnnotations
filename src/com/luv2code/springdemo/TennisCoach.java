@@ -9,6 +9,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class TennisCoach implements Coach {
 	
+	//define field Injection
+	@Autowired
 	private FortuneService fortuneService;
 	
 	//DI - Constructor Injection using Autowired
@@ -33,11 +35,13 @@ public class TennisCoach implements Coach {
 	}
 	*/
 	
+	/*
 	@Autowired
 	public void doSomeCrazyStuff(FortuneService theFortuneService) {
 		System.out.println("TenniseCoach: inside doSomeCrazyStuff method");
 		fortuneService = theFortuneService;
 	}
+	*/
 
 	@Override
 	public String getDailyWorkout() {
