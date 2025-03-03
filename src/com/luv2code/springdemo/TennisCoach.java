@@ -20,11 +20,14 @@ public class TennisCoach implements Coach {
 	*/
 	
 	//define default constructor
-	public TennisCoach() {}
+	public TennisCoach() {
+		System.out.println("TenniseCoach: inside constructor");
+	}
 	
 	//define setter injection
 	@Autowired
 	public void setFortuneService(FortuneService theFortuneService) {
+		System.out.println("TenniseCoach: inside setFortuneService method");
 		fortuneService = theFortuneService;
 	}
 
