@@ -25,9 +25,17 @@ public class TennisCoach implements Coach {
 	}
 	
 	//define setter injection
+	/*
 	@Autowired
 	public void setFortuneService(FortuneService theFortuneService) {
 		System.out.println("TenniseCoach: inside setFortuneService method");
+		fortuneService = theFortuneService;
+	}
+	*/
+	
+	@Autowired
+	public void doSomeCrazyStuff(FortuneService theFortuneService) {
+		System.out.println("TenniseCoach: inside doSomeCrazyStuff method");
 		fortuneService = theFortuneService;
 	}
 
